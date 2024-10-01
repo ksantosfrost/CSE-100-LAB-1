@@ -39,6 +39,7 @@ html {
 
 img {
     display: block;
+    max-width: 100%;
 }
 
 .option:hover {
@@ -58,4 +59,29 @@ img {
 .text {
     color: white;
     background-color:#182b49;
+}
+
+@media screen and (max-width: 800px ) {
+    .navbar a {
+        display: none;
+    }
+
+    .navimg {
+        max-width: 75%;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+    .fourtext {
+        grid-template-columns: 1fr 1fr;
+        row-gap: 15px;
+    }
+
+    
 }
